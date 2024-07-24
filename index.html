@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Produto</title>
+    <style>
+        .star-rating {
+            display: flex;
+            align-items: center;
+        }
+        .stars-outer {
+            position: relative;
+            display: inline-block;
+        }
+        .stars-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+        }
+        .stars-outer::before,
+        .stars-inner::before {
+            content: "★★★★★";
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+            color: #ccc;
+        }
+        .stars-inner::before {
+            color: #f8ce0b;
+        }
+        .testimonials {
+            margin-top: 20px;
+        }
+        .testimonial {
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .selo-qualidade {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .selo-qualidade img {
+            width: 100px;
+            height: auto;
+        }
+        .garantia {
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-credibility">
+        <!-- Avaliação de Estrelas -->
+        <div class="star-rating">
+            <div class="stars-outer">
+                <div class="stars-inner" style="width: 90%;"></div>
+            </div>
+            <span>(4.5 de 5 com 150 avaliações)</span>
+        </div>
+
+        <!-- Depoimentos de Clientes -->
+        <div class="testimonials">
+            <div class="testimonial">
+                <p><strong>João M.:</strong> "Ótimo produto! Me ajudou muito com meu humor e energia. Recomendo!"</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>Maria S.:</strong> "A qualidade do meu sono melhorou drasticamente. Bluemed Nutrition é incrível!"</p>
+            </div>
+        </div>
+
+        <!-- Selos de Qualidade -->
+        <div class="selo-qualidade">
+            <img src="https://via.placeholder.com/100x50?text=Produto+Testado" alt="Selo de Qualidade">
+            <img src="https://via.placeholder.com/100x50?text=Satisfacao+Garantida" alt="Selo de Satisfação">
+        </div>
+
+        <!-- Garantia de Satisfação -->
+        <div class="garantia">
+            <p>Garantia de Devolução do Dinheiro: Satisfação Garantida ou seu dinheiro de volta!</p>
+        </div>
+    </div>
+</body>
+</html>
 
