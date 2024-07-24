@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação de Produto</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
         .star-rating {
             display: flex;
             align-items: center;
+            font-size: 1.5em;
+            color: #ffcc00;
+            margin-bottom: 20px;
         }
         .stars-outer {
             position: relative;
             display: inline-block;
+            margin-right: 10px;
         }
         .stars-inner {
             position: absolute;
@@ -19,7 +27,7 @@
             left: 0;
             white-space: nowrap;
             overflow: hidden;
-            width: 0;
+            width: 90%;
         }
         .stars-outer::before,
         .stars-inner::before {
@@ -29,28 +37,31 @@
             color: #ccc;
         }
         .stars-inner::before {
-            color: #f8ce0b;
-        }
-        .testimonials {
-            margin-top: 20px;
+            color: #ffcc00;
         }
         .testimonial {
             border-top: 1px solid #ddd;
             padding: 10px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .testimonial strong {
+            color: #333;
         }
         .selo-qualidade {
-            margin-top: 10px;
             display: flex;
             gap: 10px;
+            margin: 20px 0;
         }
         .selo-qualidade img {
-            width: 100px;
+            width: 80px;
             height: auto;
         }
         .garantia {
-            margin-top: 10px;
-            color: green;
+            margin-top: 20px;
+            color: #28a745;
             font-weight: bold;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -59,9 +70,9 @@
         <!-- Avaliação de Estrelas -->
         <div class="star-rating">
             <div class="stars-outer">
-                <div class="stars-inner" style="width: 90%;"></div>
+                <div class="stars-inner"></div>
             </div>
-            <span>(4.5 de 5 com 150 avaliações)</span>
+            <span>4.5 de 5 com 150 avaliações</span>
         </div>
 
         <!-- Depoimentos de Clientes -->
@@ -76,8 +87,8 @@
 
         <!-- Selos de Qualidade -->
         <div class="selo-qualidade">
-            <img src="https://via.placeholder.com/100x50?text=Produto+Testado" alt="Selo de Qualidade">
-            <img src="https://via.placeholder.com/100x50?text=Satisfacao+Garantida" alt="Selo de Satisfação">
+            <img src="https://via.placeholder.com/80x50?text=Produto+Testado" alt="Selo de Qualidade">
+            <img src="https://via.placeholder.com/80x50?text=Satisfacao+Garantida" alt="Selo de Satisfação">
         </div>
 
         <!-- Garantia de Satisfação -->
@@ -87,4 +98,3 @@
     </div>
 </body>
 </html>
-
